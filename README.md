@@ -8,7 +8,7 @@ This repository is split up into multiple steps, corresponding to the tutorials.
     elm-package install
     npm run start
     
-Then you can connect to http://localhost:8080. 
+Then you can connect to [http://localhost:8080](http://localhost:8080). 
 
 ## Connecting from another device
 If you want to connect from another device, for example your mobile phone, you need to enable remote connections:
