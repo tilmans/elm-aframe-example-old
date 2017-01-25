@@ -9,7 +9,7 @@
     "url": "https://github.com/tilmans/elm-aframe-example.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --content-base src/",
+    "start": "webpack-dev-server --hot --host 0.0.0.0 --inline --content-base src/",
     "build": "rimraf docs && webpack",
     "watch": "webpack --watch"
   },

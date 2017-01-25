@@ -2,11 +2,12 @@ module Main exposing (..)
 
 import Html exposing (..)
 import AFrame exposing (..)
+import AFrame.Primitives.Attributes exposing (..)
 import ModelLoader exposing (..)
 
 
 type alias Model =
-    { modelName : String }
+    Int
 
 
 type Msg
@@ -15,7 +16,7 @@ type Msg
 
 init : ( Model, Cmd Msg )
 init =
-    ( Model "T-Rex-00.ply", Cmd.none )
+    ( 0, Cmd.none )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -33,7 +34,13 @@ subscriptions model =
 view : Model -> Html Msg
 view model =
     scene []
-        [ entity [ plymodel ("src: url(/" ++ model.modelName ++ ")") ] []
+        [ entity
+            [ plymodel "src: url(/T-Rex-00.ply)"
+            , scale 0.5 0.5 0.5
+            , position 0 -6 -13
+            , rotation -90 0 0
+            ]
+            []
         ]
 
 
