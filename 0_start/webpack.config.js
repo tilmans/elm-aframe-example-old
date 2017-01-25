@@ -35,10 +35,10 @@ var commonConfig = {
   plugins: [
       new CopyWebpackPlugin([
         {
-            from: 'aframe/'
+            from: '../aframe/'
         },
         {
-            from: 'models/'
+            from: '../models/'
         }
       ]),
 
