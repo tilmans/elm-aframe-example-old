@@ -5,7 +5,6 @@ This repository is split up into multiple steps, corresponding to the tutorials.
 
     cd 0_start
     npm install
-    elm-package install
     npm run start
     
 Then you can connect to [http://localhost:8080](http://localhost:8080). 
